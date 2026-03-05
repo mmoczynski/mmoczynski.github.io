@@ -11,43 +11,46 @@
 </head>
 <body>
 
-    <header>
-        <!--<nav>
-            <a href="#intro">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact-me">Contact Me</a>
-        </nav> -->
-    </header>
     <main>
 
         <section id="intro" class="fullwidth">
-            <div>
+            <div class="col right">
                 <h1>Matthew Moczynski</h1>
-                <div>
-                    <a href="#intro">Home</a>
+                <div class="tagline">Full-stack web developer from the greater Madison, WII area</div>
+                <button class="mobile-menu-button"></button>
+                <nav>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
-                    <a href="#contact-me">Contact Me</a>
-                </div>
+                </nav>
             </div>
-            <p class="intro-paragraph">I am Matthew Moczynski, a full-stack web developer from the greater Madison area. I am capable of programming in languages such as JavaScript, MySQL, PHP, Python, Lua, C, and C++. I am also capable of struturing websites in HTML and designing them in CSS.</p>
+            <div id="contact-me" class="col left">
+                <h2>Contact Me</h2>
+                <form class="contact-form" method="post" action="https://formspree.io/f/mqaewkar">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="sender-name">Email:</label>
+                    <input type="email" id="sender-name" name="sender-name">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    <label for="content">Message: </label>
+                    <textarea id="content" name="content"></textarea>
+                    <input type="submit" value="Send Message" id="submit-button">
+                </form>
+            </div>  
         </section>
-
         <section id="projects">
             <div>
                 <h2>Projects</h2>
                 <p>Here is a list of some of the projects I have worked on:</p>
                 <ul>
                     <li>
-                        <a href="https://github.com/mmoczynski/react-card-game-2/">
+                        <a target="_blank" href="https://github.com/mmoczynski/react-card-game-2/">
                             React Card Game
                         </a>
                     </li>
                     <li>
-                        <a href="https://mmoczynski.github.io/matter-template/">
+                        <a target="_blank" href="https://mmoczynski.github.io/matter-template/">
                             Matter Template Creator
                         </a>
                     </li>
@@ -57,7 +60,10 @@
 
         <section id="education">
             <h2>Education</h2>
-                <p>I am currently studying for an associates degree at Blackhawk Technical College, located in Janesville WI. I expect to graduate on May 2026</p>
+                <p>
+                    I am currently studying for an associates degree at Blackhawk Technical College, located in Janesville WI. 
+                    I expect to graduate on May 2026.
+                </p>
                 <p>Here are some of the accomplishements I have made during studying for the degree:</p>
                 <ul>
                     <li>Created web software using JavaScript, Python, PHP, MySQL, CSS and HTML.</li>
@@ -66,32 +72,28 @@
                     <li>Managed a team designing a complete website.</li>
                     <li>Photographed various scenes and utilized bracketing, lighting, exposure, </li>
                 </ul>
-                <p>In addition to this, I did some general studying at Madison Area Techical college from September 2019 to August 2022. I did classes on topics like political theory, law and society, mathematics, and some others.</p>
+                <p>
+                    In addition to this, I did some general studying at Madison Area Techical college from September 2019 to August 2022. 
+                    I studied in classes on topics like political theory, law and society, mathematics, and some others.
+            </p>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <p>I have an intership at the non-profit organzation known called Wisconsin EcoLatinos. The website they have utlizes Wix. Furthermore, I have worked with the team and utilized things like alt text, gave professional advice on search engine optimization and worked with the team they have.</p>
-            <p>I also helped out with someone's online store by taking photographs of clothing and taking measurements of said clothing.</p>
-        </section>
-
-        <section id="contact-me">
-            <h2>Contact Me</h2>
-            <form class="contact-form" method="post" action="https://formspree.io/f/mqaewkar">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject">
-                <label for="content">Message: </label>
-                <textarea id="content" name="content"></textarea>
-                <input type="submit" value="Send Message" id="submit-button">
-            </form>
+            <p>
+                I am currently in a web designer intership at the non-profit organzationn Wisconsin EcoLatinos. 
+                The website they have utlizes Wix. 
+                Furthermore, I have worked with their team and utilized alt text, gave professional 
+                advice on search engine optimization, and made sure the website was accessible.
+            </p>
         </section>
 
     </main>
     <footer>
         <section class="info">
             <span>&copy; 2026 Matthew Moczynski</span>
+            <span class="seperator-pipe">|</span>
+            <a target="_blank" href="https://github.com/mmoczynski/mmoczynski.github.io">View Code for Website</a>
         </section>
         <!--<section class="contacts">
             <span>email@example.com</span>
