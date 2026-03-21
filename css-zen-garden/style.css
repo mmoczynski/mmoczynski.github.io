@@ -1,0 +1,199 @@
+/**
+* Week 10-11 Project
+* Matthew Moczynski
+*
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #111;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+a {
+    color: lightblue;
+}
+
+.page-wrapper {
+    background-color: #222;
+    box-shadow: 0 0 10px black;
+}
+
+/*** Sidebar, main and intro divs ***/
+
+.sidebar, .main, .intro {
+    padding: 10px;
+}
+
+.sidebar {
+    flex: 1 1 30%;
+}
+
+.main {
+    flex: 1 1 70%;
+}
+
+.intro {
+    flex-basis: 100%;
+}
+
+ul {
+    margin: 25px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 20px;
+    background: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 50px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    font-variant-caps: petite-caps;
+}
+
+/*
+*
+* https://www.svgrepo.com/svg/489491/information-circle
+*/
+
+.explanation h3 {
+    background-image: url(images/information-circle-svgrepo-com.svg);
+}
+
+/**
+* Participation header
+* Image source: https://www.svgrepo.com/svg/483390/handshake
+*/
+
+.participation h3 {
+    background-image: url(images/handshake-svgrepo-com.svg);
+}
+
+/**
+* Requirements header
+* Image source: https://www.svgrepo.com/svg/376181/requirements
+*/
+
+.requirements h3 {
+    background-image: url(images/requirements-svgrepo-com.svg);
+}
+
+/*
+* Header for other designs
+* https://www.svgrepo.com/svg/435299/design
+*/
+
+.design-selection h3 {
+    background-image: url(images/design-svgrepo-com.svg);
+}
+
+/*
+* Preamble header
+* https://www.svgrepo.com/svg/480885/road-2
+*/
+
+.preamble h3 {
+    background-image: url(images/road-2-svgrepo-com.svg);
+}
+
+/**
+* Benefits header
+* https://www.svgrepo.com/svg/506751/smile-circle
+*/
+
+.benefits h3 {
+    background-image: url(images/smile-circle-svgrepo-com.svg);
+}
+
+/*
+* https://www.svgrepo.com/svg/356070/file-cabinet
+*
+*/
+
+.design-archives h3 {
+    background-image: url(images/file-cabinet-svgrepo-com.svg);
+}
+
+/**
+* https://www.svgrepo.com/svg/514073/chain
+*
+*/
+
+.zen-resources h3 {
+    background-image: url(images/chain-svgrepo-com.svg);
+    background-size: 20px;
+}
+
+/**
+* Page header
+*/
+
+header {
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    background: #333;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+h2::before {
+    content: '\1f4bb\1F4F1';
+}
+
+h2::after {
+    content: '\1f4cf\1f58c';
+}
+
+/**
+* Desktop style
+*
+*/
+
+@media only screen and (min-width: 768px) {
+
+    .page-wrapper {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #222;
+        box-shadow: 0 0 10px black;
+    }
+
+    h2::before {
+        margin-right: 100px;
+    }
+    
+    h2::after {
+        margin-left: 100px;
+    }
+
+}

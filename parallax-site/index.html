@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Moczynski's Parallax Website Project</title>
+    <style>
+
+        /**
+        * Matthew Moczynski Parallax Website
+        * 4/10/2024
+        * Design Basics 2 Class
+        *
+        */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 21px;
+        }
+
+        .section {
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #eee;
+            text-shadow: 0px 0px 20px BLACK;
+            flex-direction: column;
+            z-index: 100;
+            position: relative;
+        }
+
+        .section h2 {
+            font-weight: 100;
+            font-size: 50px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /**
+        * Image source: https://commons.wikimedia.org/wiki/File:Colorful_clouds_and_blue_sky_with_water_reflection_of_an_island_hosting_trees_at_sunrise_in_Si_Phan_Don,_Laos.jpg
+        *
+        */
+
+        .intro {
+            background-image: url("images/forest-island-resize.jpg");
+        }
+
+        /**
+        * Image source: https://commons.wikimedia.org/wiki/File:Wandelen_over_de_Planken_Wambuis_vanuit_Mossel_069_A.jpg
+        */
+
+        .creations {
+            background-image: url("images/forest-2-resize.jpg");
+        }
+
+        /**
+        * Image source: https://commons.wikimedia.org/wiki/File:Neudenau_-_Herbolzheim_-_Felder,_grasiger_Weg_und_Birnbaum_im_April_(1.3).jpg
+        */
+
+        .last {
+            background-image: url("images/field-w-tree-resize.jpg");
+         }
+
+        .content {
+            color: white;
+            background: #333;
+            box-shadow: 0 0 20px #333;
+            padding: 20px 20px;
+            z-index: 1000;
+            position: relative;
+        }
+
+        a {
+            color: lightblue;
+        }
+
+        ul {
+            margin: 20px;
+        }
+
+        /*** Make it so the link text breaks if it is too long for the screen. ***/
+
+        .sources a {
+            word-break: break-all;
+        }
+
+        .caption {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+        
+        /*** Desktop Styles ***/
+
+        @media only screen and (min-width: 768px) {
+            .section h2 {
+                margin: 10px;
+            }
+
+            .content {
+                padding: 30px 100px;
+            }
+
+            .section h2 {
+                font-size: 100px;
+                font-weight: 130;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="section intro">
+        <h2>Matthew Moczynski</h2>
+        <p class="caption">Welcome to my Parallax website. You can learn some information here about me and my projects.</p>
+    </div>
+    <div class="content">
+        Hello, I am Matthew Moczynski. I am currently a student at Blackhawk Technical College and I intend to become a web developer.
+    </div>
+    <div class="section creations">
+        <h2>Creations</h2>
+        <p class="caption">I have created many things using HTML, CSS and JavaScript</p>
+    </div>
+    <div class="content">
+        <p>Here is a list of some of the creations I have made in some of my classes:</p>
+        <ul>
+            <li><a href="http://www.btcsoftware.pro/mmoczynski/brodhead/pages/home.html">Markup Basics 1 Brodhead Site</a></li>
+            <li><a href="http://btcsoftware.pro/mmoczynski/index.html">Markup Basics 1 / Design Basics 1 Website</a></li>
+            <li><a href="http://btcsoftware.pro/mmoczynski/CSSZenGarden/index.html">CSS Zen Garden (Design Basics 2)</a></li>
+            <li><a href="http://btcsoftware.pro/mmoczynski/flexbox/">Flexbox example</a></li>
+        </ul>
+    </div>
+    <div class="section last">
+        <h2>Lorem Ipsum</h2>
+        <div class="caption">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </div>
+    </div>
+    <div class="content sources">
+        <p>Image Sources (Images used in this Parallax Website are resized versions):</p>
+        <ul>
+            <li>
+                <a href="https://commons.wikimedia.org/wiki/File:Colorful_clouds_and_blue_sky_with_water_reflection_of_an_island_hosting_trees_at_sunrise_in_Si_Phan_Don,_Laos.jpg">
+                    https://commons.wikimedia.org/wiki/File:Colorful_clouds_and_blue_sky_with_water_reflection_of_an_island_hosting_trees_at_sunrise_in_Si_Phan_Don,_Laos.jpg
+                </a>
+            </li>
+            <li>
+                <a href="https://commons.wikimedia.org/wiki/File:Wandelen_over_de_Planken_Wambuis_vanuit_Mossel_069_A.jpg">
+                    https://commons.wikimedia.org/wiki/File:Wandelen_over_de_Planken_Wambuis_vanuit_Mossel_069_A.jpg
+                </a>
+            </li>
+            <li>
+                <a href="https://commons.wikimedia.org/wiki/File:Neudenau_-_Herbolzheim_-_Felder,_grasiger_Weg_und_Birnbaum_im_April_(1.3).jpg">
+                    https://commons.wikimedia.org/wiki/File:Neudenau_-_Herbolzheim_-_Felder,_grasiger_Weg_und_Birnbaum_im_April_(1.3).jpg 
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

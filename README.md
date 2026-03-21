@@ -1,2 +1,2 @@
 # mmoczynski.github.io
-Portfolio website
+This is the code for my portfolio website.
