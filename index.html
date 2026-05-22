@@ -8,25 +8,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <main>
+      <header>
+        <div id="mobile-nav" class="header-items mobile-hidden">
+            <nav class="links">
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+            </nav>
+            <div class="social-media-links">
+                <a href="https://github.com/mmoczynski" title="GitHub">
+                    <!-- Source: https://brand.github.com/foundations/logo -->
+                    <img src="images/GitHub_Invertocat_White.svg">
+                </a>
+                <a href="https://codepen.io/mmoczynski" title="Codepen">
+                    <!-- Source: https://www.svgrepo.com/svg/313739/codepen -->
+                    <img src="images/codepen-svgrepo-com.svg">
+                </a>
+            </div>
+        </div>
+        <button class="mobile-menu-button">
+            <img src="images/Hamburger_icon.svg" title="See Navigation Menu">
+        </button>
+      </header>
+      <main>
 
         <section id="intro" class="fullwidth">
             <div class="col right">
                 <h1>Matthew Moczynski</h1>
-                <div class="tagline">Full-stack web developer from the greater Madison, WII area</div>
-                <button class="mobile-menu-button"></button>
-                <nav>
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#experience">Experience</a>
-                </nav>
+                <div class="tagline">Full-stack web developer from the greater Madison, WI area</div>
+                <button class="show-contact-menu">Show Contact Menu</button>
             </div>
-            <div id="contact-me" class="col left">
-                <h2>Contact Me</h2>
+            <div id="contact-me" class="col left mobile-hidden">
+                <div class="mobile-form-top">
+                    <!-- Source: https://www.svgrepo.com/svg/380138/x-close-delete -->
+                    <img src="images/x-close-delete-svgrepo-com.svg">
+                </div>
                 <form class="contact-form" method="post" action="https://formspree.io/f/mqaewkar">
+                    <!--<h2>Contact Me</h2>-->
+                    <p>If you have a question for me, please fill out the form to send a message to me.</p>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                     <label for="sender-name">Email:</label>
@@ -42,38 +64,38 @@
         <div class="section-wrapper">
             <section id="projects">
 
-                <h2>Projects</h2>
-                <p>Here is a list of some of the projects I have worked on:</p>
+                <h2>Completed Projects</h2>
+                <p>Here is a list of some projects I completed:</p>
 
                 <div class="project-list">
-                    <div class="project-card">
-                        <h3>React Card Game</h3>
+
+                    <a class="project-card" href="https://github.com/mmoczynski/react-card-game-2/" target="_blank">
                         <img src="images/react-card-game-preview.png" alt="React Card Game">
+                        <h3>React Card Game</h3>
                         <div class="description">
                             A card game made in react.
                         </div>
-                        <div class="buttons">
-                            <a target="_blank" href="https://github.com/mmoczynski/react-card-game-2/">
-                                View Code on GitHub
-                            </a>
+                    </a>
+
+                    <a class="project-card" href="https://mmoczynski.github.io/btc-frontend-projects/atoll-collection/index.html" target="_blank">
+                        <img src="images/atoll-collection-thumbnail.png" alt="Atoll Collection">
+                        <h3>Atoll Collection</h3>
+                        <div class="description">
+                            A collection of atolls from around the world.
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Matter Template</h3>
-                        <div class="description"></div>
-                        <div class="buttons">
-                            <a target="_blank" href="https://mmoczynski.github.io/matter-template/">
-                                View Project
-                            </a>
-                            <a target="_blank" href="https://github.com/mmoczynski/matter-template">
-                                View Code on GitHub
-                            </a>
+                    </a>
+
+                    <a class="project-card" href="https://mmoczynski.github.io/btc-frontend-projects/parallax-site/index.html" target="_blank">
+                        <img src="images/parallax-website-thumbnail.png">
+                        <h3>Parallax Website</h3>
+                        <div class="description">
+                            A simple webpage utlizing a parallax layout.
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div>
-
+                    You can view more projects on my <a href="">GitHub</a> or my <a href="">CodePen</a>.
                 </div>
 
 
@@ -84,8 +106,8 @@
             <section id="education">
                 <h2>Education</h2>
                     <p>
-                        I am currently studying for an associates degree at Blackhawk Technical College, located in Janesville WI. 
-                        I expect to graduate on May 2026.
+                        I hold an associates degree in Web Software Development from Blackhawk Technical College. 
+                        While doing the degree, I also earned a certificate of professional development.
                     </p>
                     <p>Here are some of the accomplishements I have made during studying for the degree:</p>
                     <ul>
@@ -105,12 +127,30 @@
         <div class="section-wrapper">
             <section id="experience">
                 <h2>Experience</h2>
-                <p>
-                    I am currently in a web designer intership at the non-profit organzationn Wisconsin EcoLatinos. 
-                    The website they have utlizes Wix. 
-                    Furthermore, I have worked with their team and utilized alt text, gave professional 
-                    advice on search engine optimization, and made sure the website was accessible.
-                </p>
+                <div class="resume-card">
+                    <div class="card-top">
+                        <h3>Web Designer Internship</h3>
+                        <span class="daterange">
+                            <time>January 2026</time>
+                            <span class="seperator">-</span>
+                            <time>Present</time>
+                        </span>
+                        <div class="employer">
+                            <span class="name">Wisconsin EcoLatinos</span>
+                            <span class="seperator">-</span>
+                            <span class="location">Madison, WI</span>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <ul>
+                            <li>Edited website using Wix</li>
+                            <li>Worked with a team to design a website</li>
+                            <li>Provided professional advice on search engine optimization</li>
+                            <li>Improved the search engine optimization of the website</li>
+                            <li>Structured website to conform to HTML semantic tag standards</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
 
